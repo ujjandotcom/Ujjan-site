@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Abdul Rehman Ujjan</title>
+  <link rel="icon" type="image/x-icon" href="/files/favicon.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <div id="header">
+    <div id="logo">
+      <a href="#"><img src="files/logo.png"></a>
+    </div>
+    <ul id="header-menu">
+      <li><a href="#hero-section">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </div>
+
+  <div id="hero-section">
+    <div id="hero-content">
+      <h4>Hi, My Name Is</h4>
+      <h1>Abdul Rehman Ujjan</h1>
+      <h5>Full Stack Developer / Web & Graphic Designer</h5>
+      <p>Skills: Full Stack Development, WordPress website development and management, web designing, Lifetime SSL
+        Solutions, Figma & Adobe XD.</p>
+      <h6>Learn More <a href="#about"> About Me</a></h6>
+    </div>
+    <div id="hero-image">
+      <img id="profile-picture" src="files/Profile-picture.jpg">
+      <div id="location">
+        <span><img src="files/icon-location.png"></span>
+        <h5>Islamabad, Pakistan</h5>
+      </div>
+    </div>
+  </div>
+
+  <div id="about">
+    <h2 id="about-heading">About Me</h2>
+    <div id="about-s1">
+      <div id="about-me">
+        <div id="about-content">
+          <h3>I'm <strong>Abdul Rehman Ujjan,</strong> Full Stack developer / Graphic Designer</h3>
+          <p>I am a skilled Full Stack Developer with a passion for web development and design. Specializing in
+            WordPress, I create visually stunning websites and offer lifetime SSL solutions for secure experiences.
+            Proficient in popular plugins like Elementor and Contact Form 7, I ensure seamless functionality and
+            exceptional user experiences.</p>
+        </div>
+        <div id="about-skills">
+          <h3>Skills</h3>
+          <ul>
+            <li class="skill"><span class="material-symbols-rounded diamond">diamond</span>
+              <h6>0</h6>
+            </li>
+            <li class="skill"><span class="material-symbols-rounded diamond">diamond</span>
+              <h6>1</h6>
+            </li>
+            <li class="skill"><span class="material-symbols-rounded diamond">diamond</span>
+              <h6>2</h6>
+            </li>
+            <li class="skill"><span class="material-symbols-rounded diamond">diamond</span>
+              <h6>3</h6>
+            </li>
+            <li class="skill"><span class="material-symbols-rounded diamond">diamond</span>
+              <h6>4</h6>
+            </li>
+            <li class="skill"><span class="material-symbols-rounded diamond">diamond</span>
+              <h6>5</h6>
+            </li>
+            <li class="skill"><span class="material-symbols-rounded diamond">diamond</span>
+              <h6>6</h6>
+            </li>
+            <li class="skill pending">
+              <div class="pending-overlay"><span class="material-symbols-rounded lock">lock</span></div><span
+                class="material-symbols-rounded diamond">diamond</span>
+              <h6>7</h6>
+            </li>
+            <li class="skill pending">
+              <div class="pending-overlay"><span class="material-symbols-rounded lock">lock</span></div><span
+                class="material-symbols-rounded diamond">diamond</span>
+              <h6>8</h6>
+            </li>
+            <li class="skill pending">
+              <div class="pending-overlay"><span class="material-symbols-rounded lock">lock</span></div><span
+                class="material-symbols-rounded diamond">diamond</span>
+              <h6>9</h6>
+            </li>
+            <li class="skill pending">
+              <div class="pending-overlay"><span class="material-symbols-rounded lock">lock</span></div><span
+                class="material-symbols-rounded diamond">diamond</span>
+              <h6>10</h6>
+            </li>
+            <li class="skill pending">
+              <div class="pending-overlay"><span class="material-symbols-rounded lock">lock</span></div><span
+                class="material-symbols-rounded diamond">diamond</span>
+              <h6>11</h6>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="side-menu">
+        <a href="#hero-section"><span class="material-symbols-rounded">home</span></a>
+        <a href="#about"><span class="material-symbols-rounded">person</span></a>
+        <a href="#portfolio"><span class="material-symbols-rounded">dashboard</span></a>
+        <a href="#contact"><span class="material-symbols-rounded">phone_in_talk</span></a>
+      </div> -->
+    </div>
+  </div>
+  <div id="preview-div" ><div id="close-c" onclick="close_preview()"></div><span class="material-symbols-rounded" id="pd-left">chevron_left</span><img src="files/data/AD/01.png"><div id="pd-close-button"><span class="material-symbols-rounded" onclick="close_preview()">close</span></div><span class="material-symbols-rounded" id="pd-right">chevron_right</span></div>
+  <div id="portfolio">
+    <h2 id="portfolio-heading">Portfolio</h2>
+    <div id="portfolio-s1">
+      <div id="portfolio-content">
+        <div id="categories">
+          <h4 onclick="Category(A.id)" id="A" class="portfolio-category selected-category">All</h4>
+          <h4 onclick="Category(WD.id)" id="WD" class="portfolio-category">Web Design</h4>
+          <h4 onclick="Category(AD.id)" id="AD" class="portfolio-category">App Design</h4>
+          <h4 onclick="Category(DV.id)" id="DV" class="portfolio-category">Development</h4>
+          <h4 onclick="Category(GD.id)" id="GD" class="portfolio-category">Graphic Design</h4>
+          <h4 onclick="Category(WP.id)" id="WP" class="portfolio-category">Wordpress</h4>
+        </div>
+        <div id="categories-in">
+          <ul id="categories-data">
+            <li class="portfolio-data" onclick="preview('p-data-1')" id="p-data-1"></li>
+            <li class="portfolio-data" onclick="preview('p-data-2')" id="p-data-2"></li>
+            <li class="portfolio-data" onclick="preview('p-data-3')" id="p-data-3"></li>
+            <li class="portfolio-data" onclick="preview('p-data-4')" id="p-data-4"></li>
+            <li class="portfolio-data" onclick="preview('p-data-5')" id="p-data-5"></li>
+            <li class="portfolio-data" onclick="preview('p-data-6')" id="p-data-6"></li>
+          </ul>
+          <div id="page-slider">
+            <hr>
+            <span onclick="pg(1)" id="pg1" class="material-symbols-rounded page-selected">fiber_manual_record</span>
+            <span onclick="pg(2)" id="pg2" class="material-symbols-rounded">fiber_manual_record</span>
+            <span onclick="pg(3)" id="pg3" class="material-symbols-rounded">fiber_manual_record</span>
+            <hr>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="side-menu">
+        <a href="#hero-section"><span class="material-symbols-rounded">home</span></a>
+        <a href="#about"><span class="material-symbols-rounded">person</span></a>
+        <a href="#portfolio"><span class="material-symbols-rounded">dashboard</span></a>
+        <a href="#contact"><span class="material-symbols-rounded">phone_in_talk</span></a>
+      </div> -->
+    </div>
+  </div>
+
+  <div id="contact">
+    <h2 id="contact-heading">Contact Me</h2>
+    <div id="contact-content">
+      <div id="contact-card">
+        <div id="info-card">
+          <div id="info">
+            <h3>Contact Info</h3>
+            <ul>
+              <li>
+                <span><img src="files/icon-mail.png"></span>
+                <a href="mailto:contact@ujjan.com"><h6>contact@ujjan.com</h6></a>
+              </li>
+              <li><span><img src="files/icon-linkedin.png"> </span>
+                <a href="https://www.linkedin.com/in/therehmanujjan"><h6>therehmanujjan</h6></a>
+              </li>
+              <li><span><img src="files/icon-facebook.png"></span>
+                <a href="https://www.facebook.com/therehmanujjan"><h6>therehmanujjan</h6></a>
+              </li>
+            </ul>
+            <h3>Social Handles</h3>
+            <ul>
+              <li><span><img src="files/icon-github.png"> </span>
+                <a href="https://github.com/therehmanujjan"><h6>therehmanujjan</h6></a>
+              </li>
+              <li><span><img src="files/icon-instagram.png"> </span>
+                <a href="https://www.instagram.com/therehmanujjan"><h6>therehmanujjan</h6></a>
+              </li>
+              <li><span><img src="files/icon-twitter.png"> </span>
+                <a href="https://www.twitter.com/therehmanujjan"><h6>therehmanujjan</h6></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="form-card">
+          <form action="https://formsubmit.co/abdulrehmanujjan@yahoo.com" method="post">
+            <input type="text" name="name" id="form-name" placeholder="Name">
+            <input type="email" name="email" id="form-email" placeholder="Email" required>
+            <textarea id="form-message" name="message" rows="6" placeholder="Message" required></textarea>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New inquiry On Portfilio!">
+            <input type="hidden" name="_next" value="https://ujjan.com/">
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+      <!-- <div class="side-menu">
+        <a href="#hero-section"><span class="material-symbols-rounded">home</span></a>
+        <a href="#about"><span class="material-symbols-rounded">person</span></a>
+        <a href="#portfolio"><span class="material-symbols-rounded">dashboard</span></a>
+        <a href="#contact"><span class="material-symbols-rounded">phone_in_talk</span></a>
+      </div> -->
+    </div>
+  </div>
+
+  <div id="footer">
+    <div id="f-s1">
+      <div id="f-logo"><a href="#"><img src="files/logo.png"></a></div>
+      <div id="f-sitemap">
+        <ul id="f-menu">
+          <li><a href="#hero-section">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+        <h6 id="f-copyright">&COPY; 2023 - Abdul Rehman Ujjan</h6>
+      </div>
+    </div>
+    <div id="f-s2">
+      <ul id="f-social-links">
+        <li><a href="https://github.com/therehmanujjan"><img src="files/icon-github.png"></a></li>
+        <li><a href="https://www.x.com/therehmanujjan"><img src="files/icon-twitter.png"></a></li>
+        <li><a href="https://www.facebook.com/therehmanujjan"><img src="files/icon-facebook.png"></a></li>
+        <li><a href="https://www.linkedin.com/in/therehmanujjan"><img src="files/icon-linkedin.png"></a></li>
+        <li><a href="https://www.instagram.com/therehmanujjan"><img src="files/icon-instagram.png"></a></li>
+      </ul>
+      <a href="mailto:contacts@ujjan.com"><h6>Contact@ujjan.com</h6></a>
+      
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
